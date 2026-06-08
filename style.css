@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+#stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* BLOCS */
+.block {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+
+  width: 240px;
+  height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* couleurs fluo */
+.block.yellow {
+  background: #d4ff00;
+}
+
+.block.pink {
+  background: #ff00d4;
+}
+
+/* images en proportion réelle */
+.block img,
+.block video {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* fullscreen SUPPRIMÉ donc plus rien ici */
